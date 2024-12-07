@@ -1,4 +1,3 @@
-
 .modal {
   position: fixed;
   top: 25%;
@@ -7,17 +6,16 @@
   display: none;
   height: 500px;
   width: 500px;
-  display: flex;
-  flex-direction: row !important;
+  display: none;
 }
 
 .modal-content {
   max-width: 28rem;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: var(--blur-color);
+  backdrop-filter: var(--blur-intensity);
+  border: 1px solid var(--blur-color);
   border-radius: 1rem;
   padding: 1.5rem;
 }
@@ -30,7 +28,7 @@
 }
 
 .modal p {
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   margin-bottom: 1.5rem;
 }
 
@@ -89,7 +87,7 @@
 .close-button {
   height: 35px;
   width: 35px; 
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--lighter-blur-color);
   color: white;
   border: none;
   border-radius: 100%;
@@ -99,7 +97,3 @@
   right: 10px;
 }
 
-.close-button:hover, .modal-card:hover {
-  transition: background-color 0.3s;
-  background: rgba(255, 255, 255, 0.2);
-}

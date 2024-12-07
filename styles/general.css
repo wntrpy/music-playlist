@@ -8,3 +8,23 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overflow: hidden;
 }
+
+button{
+  cursor: pointer !important;
+}
+
+:root{
+  --blur-color: rgba(255, 255, 255, 0.2);
+  --blur-intensity:  blur(20px);
+  --lighter-blur-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/*HOVER EFFECTS*/
+.close-button:hover, 
+.modal-card:hover,
+.button-container button:hover
+{
+  transition: background-color 0.3s;
+  background: var(--blur-color);
+}

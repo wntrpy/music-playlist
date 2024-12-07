@@ -34,6 +34,7 @@
         <div class="modal-content">
           <h2>Moses's Top Songs of 2024</h2>
 
+          <!--Song Scrollable Container-->
           <div class="modal-card-scrollable-container">
             <!--MODAL SONG CARD-->
             <div class="modal-card">
@@ -49,27 +50,34 @@
               </div>
             </div>
 
-            <div class="modal-card">
-              <div class="song-info-container">
-                <div>
-                  <img src="img/backtodecember.png" alt="" />
-                </div>
-
-                <div>
-                  <h3>Back to December (Taylor's Version)</h3>
-                  <p>Taylor Swift</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <button id="closeModal" class="close-button">x</button>
         </div>
 
         <!--INFORMATION MODAL-->
-        <div id="information-modal"></div>
+        <div id="information-modal">
+          <div class="first-row">
+            <img src="img/backtodecember.png" alt="" />
+            <div class="info-and-buttons">
+            <div>
+              <h3>Back to December (Taylor's Version)</h3>
+              <p>Taylor Swift</p>
+            </div>
+            <div class="button-container">
+              <button class="editBtn">Edit</button>
+              <button class="deleteBtn">Delete</button>
+            </div>
+            </div>
+          </div>
+
+          <div class="lyrics-container">
+            
+          </div>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
+    <script src="/wst-last-task/frontend/populateScrollableContainer.js"></script>
   </body>
 </html>
