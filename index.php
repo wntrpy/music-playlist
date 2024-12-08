@@ -18,7 +18,7 @@
         <div id="cdDisc" class="cd-disc">
           <div class="cd-center">
             <div class="cd-label">
-              <span>aespa</span>
+              <span>moses</span>
             </div>
           </div>
         </div>
@@ -32,7 +32,11 @@
       <!-- Popup -->
       <div id="modal" class="modal">
         <div class="modal-content">
-          <h2>Moses's Top Songs of 2024</h2>
+          <header>
+            <h2>Moses's Top Songs of 2024</h2>
+            <button class="addButton" id="addSongButton">+</button>
+          </header>
+
 
           <!--Song Scrollable Container-->
           <div class="modal-card-scrollable-container">
@@ -40,7 +44,6 @@
             <div class="modal-card">
               <div class="song-info-container">
                 <div>
-                  <img src="img/backtodecember.png" alt="" />
                 </div>
 
                 <div>
@@ -54,11 +57,31 @@
 
           <button id="closeModal" class="close-button">x</button>
         </div>
+      </div>
+
+        <!--ADD SONG FORM-->
+        <form action="#" method="post" id="add-song-form">
+          <header>
+            <legend>Add a song to your playlist!</legend>
+            <button id="closeAddForm" class="close-button">x</button>
+          </header>
+
+          <fieldset>
+            <div>
+              <label for="">Title</label>
+              <input type="text" name="title" required>
+            </div>
+            <div>
+              <label for="">Artist</label>
+              <input type="text" name="artist" required>
+            </div>
+              <input type="submit" value="Submit" id="submitButton">
+          </fieldset>
+        </form>
 
         <!--INFORMATION MODAL-->
         <div id="information-modal">
           <div class="first-row">
-            <img src="img/backtodecember.png" alt="" />
             <div class="info-and-buttons">
             <div>
               <h3>Back to December (Taylor's Version)</h3>
@@ -75,7 +98,7 @@
             
           </div>
         </div>
-      </div>
+
     </div>
     <script src="main.js"></script>
     <script src="/wst-last-task/frontend/populateScrollableContainer.js"></script>

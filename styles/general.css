@@ -13,17 +13,37 @@ button{
   cursor: pointer !important;
 }
 
+fieldset{
+  border: none;
+}
+
 :root{
   --blur-color: rgba(255, 255, 255, 0.2);
   --blur-intensity:  blur(20px);
   --lighter-blur-color: rgba(255, 255, 255, 0.1);
 }
 
+/*MODALS*/
+
+
+/*BUTTONS*/
+.close-button,
+.addButton,
+#submitButton
+{
+  background: var(--lighter-blur-color);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
 
 /*HOVER EFFECTS*/
 .close-button:hover, 
 .modal-card:hover,
-.button-container button:hover
+.button-container button:hover,
+#submitButton:hover,
+.addButton:hover
 {
   transition: background-color 0.3s;
   background: var(--blur-color);
